@@ -1,0 +1,82 @@
+@font-face {
+  font-family: lain;
+  src: url(Lovelt__.ttf);
+}
+
+* {
+  font-family: lain;
+  color: aliceblue;
+}
+
+html {
+  background-image: url(lainback.jpg);
+  background-size: cover;
+}
+
+ul {
+  margin-top: -2px;
+}
+
+li,
+a,
+button {
+  font-size: 14px;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+header {
+  box-sizing: border-box;
+  padding: 0;
+  align-items: center;
+  background-color: #3c7cc76e;
+}
+
+.logo {
+  cursor: pointer;
+  width: 24px;
+  position: absolute;
+  margin: -11px -21px;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 6px 18px;
+}
+
+.nav-links li a {
+  transition: all 0.3 ease 0s;
+}
+
+.nav-links li a:hover {
+  color: #3dd8ff7c;
+}
+
+ul button {
+  margin-left: 100px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3 ease 0s;
+}
+
+ul button:hover {
+  color: #3dd8ff7c;
+}
+
+body {
+  overflow: hidden;
+}
+
+/*button*/
+
+#board {
+  background-image: url("gback.webp");
+  background-size: cover;
+  margin: -180px 0;
+  box-shadow: inset 0 0 40px #000000;
+}

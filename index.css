@@ -1,0 +1,281 @@
+@font-face {
+  font-family: lain;
+  src: url(Lovelt__.ttf);
+}
+
+* {
+  font-family: lain;
+  color: aliceblue;
+}
+
+body {
+  background-image: url(lainback.jpg);
+  background-size: cover;
+}
+
+ul {
+  margin-top: -2px;
+}
+
+li,
+a,
+button {
+  font-size: 14px;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+header {
+  box-sizing: border-box;
+  padding: 0;
+  align-items: center;
+  background-color: #3c7cc76e;
+}
+
+.logo {
+  cursor: pointer;
+  width: 24px;
+  position: absolute;
+  margin: -11px -21px;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 6px 18px;
+}
+
+.nav-links li a {
+  transition: all 0.3 ease 0s;
+}
+
+.nav-links li a:hover {
+  color: #3dd8ff7c;
+}
+
+button {
+  margin-left: 100px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3 ease 0s;
+}
+
+button:hover {
+  color: #3dd8ff7c;
+}
+
+/*footer*/
+
+table {
+  position: absolute;
+  bottom: 4px;
+  text-align: center;
+}
+
+td {
+  border: 3px solid;
+  border-color: #255285;
+  background-color: #2159996e;
+}
+
+/*password*/
+
+.pass {
+  position: absolute;
+  margin: 127px 107px;
+}
+
+body {
+  overflow: hidden;
+}
+/*container*/
+
+#cont {
+  position: absolute;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #3c7cc76e;
+}
+
+#cont h3 {
+  text-align: center;
+  margin: 0;
+  padding: 2px;
+  background-color: #3c7cc76e;
+  cursor: move;
+}
+
+#cont p {
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+i {
+  color: #2079b1;
+}
+
+.text {
+  width: 318px;
+  margin: 19px 69px;
+}
+
+.img {
+  width: 450px;
+  margin: 320px 177px;
+}
+
+.img1 {
+  width: 307px;
+  margin: 253px 708px;
+}
+
+.img2 {
+  width: 220px;
+  margin: 75px 1115px;
+  filter: opacity(80%) sepia(100%) hue-rotate(190deg) saturate(400%);
+}
+
+#bonk {
+  margin-top: 100px;
+}
+
+#cipher {
+  width: 100px;
+  filter: invert(100%);
+}
+
+/*music*/
+
+.boop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: lain;
+}
+
+.music-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-style: solid;
+  border-width: 3px;
+  border-color: #3c7cc76e;
+  display: flex;
+  padding: 20px 30px;
+  position: absolute;
+  margin: 100px 0;
+  z-index: 10;
+  top: 50px;
+  left: 470px;
+}
+
+.img-container {
+  position: relative;
+  width: 110px;
+}
+
+.img-container::after {
+  content: "";
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  transform: translate(-50%, 50%);
+}
+
+.img-container img {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 110px;
+  width: inherit;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: rotate 3s linear infinite;
+
+  animation-play-state: paused;
+}
+
+.music-container.play .img-container img {
+  animation-play-state: running;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.action-btn {
+  background-color: transparent;
+  border: 0;
+  color: #ebe8eb;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 20px;
+}
+
+.action-btn.action-btn-big {
+  color: #cdc2d0;
+  font-size: 30px;
+}
+
+.action-btn:focus {
+  outline: 0;
+}
+
+.music-info {
+  background-color: #2159996e;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: calc(60% - 40px);
+  padding: 10px 10px 10px 150px;
+  opacity: 0;
+  transform: translateY(0%);
+  transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+  z-index: 0;
+}
+
+.music-container.play .music-info {
+  opacity: 1;
+  transform: translateY(-100%);
+}
+
+.music-info h4 {
+  margin: 0;
+}
+
+.progress-container {
+  background: #fff;
+  cursor: pointer;
+  margin: 10px 0;
+  height: 4px;
+  width: 100%;
+}
+
+.progress {
+  background-color: #2079b1;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}

@@ -1,0 +1,150 @@
+@font-face {
+  font-family: lain;
+  src: url(Lovelt__.ttf);
+}
+
+* {
+  font-family: lain;
+  color: aliceblue;
+}
+
+body {
+  background-image: url(lainback.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+
+ul {
+  margin-top: -2px;
+}
+
+li,
+a,
+button {
+  font-size: 14px;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+header {
+  box-sizing: border-box;
+  padding: 0;
+  align-items: center;
+  background-color: #3c7cc76e;
+}
+
+.logo {
+  cursor: pointer;
+  width: 24px;
+  position: absolute;
+  margin: -11px -21px;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 6px 18px;
+}
+
+.nav-links li a {
+  transition: all 0.3 ease 0s;
+}
+
+.nav-links li a:hover {
+  color: #3dd8ff7c;
+}
+
+button {
+  margin-left: 100px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3 ease 0s;
+}
+
+button:hover {
+  color: #3dd8ff7c;
+}
+
+/*container*/
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 320px;
+}
+
+.cont {
+  position: absolute;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #3c7cc76e;
+  width: 286px;
+  text-align: center;
+}
+
+.cont h3 {
+  text-align: center;
+  margin: 0;
+  padding: 2px;
+  background-color: #3c7cc76e;
+  cursor: move;
+}
+
+input {
+  color: black;
+  text-align: center;
+  line-height: 2;
+}
+
+label {
+  text-align: left;
+  line-height: 2;
+  margin-right: 115px;
+}
+
+i {
+  color: #2079b1;
+}
+
+.text {
+  padding: 15px;
+  padding-top: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.text button {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 0;
+  padding: 8px;
+  background-color: #3c7cc76e;
+}
+
+.imgs {
+  position: absolute;
+  bottom: 0;
+}
+
+.imgs img {
+  width: 200px;
+  margin-left: 30px;
+  margin-right: 30px;
+  filter: opacity(80%) sepia(100%) hue-rotate(190deg) saturate(400%);
+}
+
+#cnter {
+  width: 150px;
+}
+
+#bg {
+  width: 100%;
+  height: 98%;
+  position: absolute;
+  margin-top: 160px;
+  filter: opacity(50%) sepia(100%) hue-rotate(190deg) saturate(400%);
+}
